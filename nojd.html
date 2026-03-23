@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="sv" xml:lang="sv"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -50,15 +50,17 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-029b10fc0dc652dab2ec1ac156c1a037.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -100,7 +102,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -119,7 +121,7 @@ window.Quarto = {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -127,7 +129,8 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./Figurer/Region Uppsala_Logo_CMYK_Vit.png" alt="Region Uppsala" class="navbar-logo">
+    <img src="./Figurer/Region Uppsala_Logo_CMYK_Vit.png" alt="Region Uppsala" class="navbar-logo light-content">
+    <img src="./Figurer/Region Uppsala_Logo_CMYK_Vit.png" alt="Region Uppsala" class="navbar-logo dark-content">
     </a>
   </div>
             <div id="quarto-search" class="" title="Sök"></div>
@@ -240,7 +243,7 @@ Figur&nbsp;1: Musikstudio
 <p>Resultaten baseras på en urvalsundersökning och redovisas som punktskattningar. Detta innebär att de uppskattade andelarna är behäftade med statistisk osäkerhet och inte nödvändigtvis är fullt representativa för hela populationen i respektive kommun. Med hjälp av osäkerhetsintervall kring skattningarna kan det med hög sannolikhet antas att den sanna andelen ligger inom det redovisade intervallet.</p>
 <p>Data är hämtat från <span class="citation" data-cites="kolada">Rådet för främjande av kommunala analyser (<a href="#ref-kolada" role="doc-biblioref">2025</a>)</span> som hänvisar till <span class="citation" data-cites="scb_medborgarundersokningen">Statistiska centralbyrån (SCB) (<a href="#ref-scb_medborgarundersokningen" role="doc-biblioref">2025a</a>)</span>. För kommuner där uppgifter saknas för flera år redovisas resultaten endast för det år då data finns tillgänglig, i form av stapeldiagram i stället för tidsserier.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Uppsala län</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Enköping</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Heby</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">Håbo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false">Knivsta</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-6" role="tab" aria-controls="tabset-1-6" aria-selected="false">Tierp</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-7" role="tab" aria-controls="tabset-1-7" aria-selected="false">Uppsala</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-8-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-8" role="tab" aria-controls="tabset-1-8" aria-selected="false">Älvkarleby</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-9-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-9" role="tab" aria-controls="tabset-1-9" aria-selected="false">Östhammar</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Uppsala län</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Enköping</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Heby</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">Håbo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false" href="">Knivsta</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-6" role="tab" aria-controls="tabset-1-6" aria-selected="false" href="">Tierp</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-7" role="tab" aria-controls="tabset-1-7" aria-selected="false" href="">Uppsala</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-8-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-8" role="tab" aria-controls="tabset-1-8" aria-selected="false" href="">Älvkarleby</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-9-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-9" role="tab" aria-controls="tabset-1-9" aria-selected="false" href="">Östhammar</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <img src="Figurer/medborgarund_kultur_Uppsala län.svg" alt="Figuren visar andelen män och kvinnor som svarat mycket eller ganska bra angående kommunens kultur och nöjesliv. Beroende på hur mycket data som finns så presenteras vissa kommuner som tidsserie och andra som stapeldiagram. Alla figurer har tillhörande osäkerhetsintervall." style="width:100%; max-width:800px; height:100%;">
@@ -423,23 +426,23 @@ Tabell&nbsp;1: Antal biobesök per invånare
 </figcaption>
 <div aria-describedby="tbl-biosalonger_besok-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div id="gnoibstmwq" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#gnoibstmwq table {
+<div id="dmhkyucrth" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#dmhkyucrth table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#gnoibstmwq thead, #gnoibstmwq tbody, #gnoibstmwq tfoot, #gnoibstmwq tr, #gnoibstmwq td, #gnoibstmwq th {
+#dmhkyucrth thead, #dmhkyucrth tbody, #dmhkyucrth tfoot, #dmhkyucrth tr, #dmhkyucrth td, #dmhkyucrth th {
   border-style: none;
 }
 
-#gnoibstmwq p {
+#dmhkyucrth p {
   margin: 0;
   padding: 0;
 }
 
-#gnoibstmwq .gt_table {
+#dmhkyucrth .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -465,12 +468,12 @@ Tabell&nbsp;1: Antal biobesök per invånare
   border-left-color: #D3D3D3;
 }
 
-#gnoibstmwq .gt_caption {
+#dmhkyucrth .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#gnoibstmwq .gt_title {
+#dmhkyucrth .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -482,7 +485,7 @@ Tabell&nbsp;1: Antal biobesök per invånare
   border-bottom-width: 0;
 }
 
-#gnoibstmwq .gt_subtitle {
+#dmhkyucrth .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -494,7 +497,7 @@ Tabell&nbsp;1: Antal biobesök per invånare
   border-top-width: 0;
 }
 
-#gnoibstmwq .gt_heading {
+#dmhkyucrth .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -506,13 +509,13 @@ Tabell&nbsp;1: Antal biobesök per invånare
   border-right-color: #D3D3D3;
 }
 
-#gnoibstmwq .gt_bottom_border {
+#dmhkyucrth .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#gnoibstmwq .gt_col_headings {
+#dmhkyucrth .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -527,7 +530,7 @@ Tabell&nbsp;1: Antal biobesök per invånare
   border-right-color: #D3D3D3;
 }
 
-#gnoibstmwq .gt_col_heading {
+#dmhkyucrth .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -547,7 +550,7 @@ Tabell&nbsp;1: Antal biobesök per invånare
   overflow-x: hidden;
 }
 
-#gnoibstmwq .gt_column_spanner_outer {
+#dmhkyucrth .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -559,15 +562,15 @@ Tabell&nbsp;1: Antal biobesök per invånare
   padding-right: 4px;
 }
 
-#gnoibstmwq .gt_column_spanner_outer:first-child {
+#dmhkyucrth .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#gnoibstmwq .gt_column_spanner_outer:last-child {
+#dmhkyucrth .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#gnoibstmwq .gt_column_spanner {
+#dmhkyucrth .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -579,11 +582,11 @@ Tabell&nbsp;1: Antal biobesök per invånare
   width: 100%;
 }
 
-#gnoibstmwq .gt_spanner_row {
+#dmhkyucrth .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#gnoibstmwq .gt_group_heading {
+#dmhkyucrth .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -609,7 +612,7 @@ Tabell&nbsp;1: Antal biobesök per invånare
   text-align: left;
 }
 
-#gnoibstmwq .gt_empty_group_heading {
+#dmhkyucrth .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -624,15 +627,15 @@ Tabell&nbsp;1: Antal biobesök per invånare
   vertical-align: middle;
 }
 
-#gnoibstmwq .gt_from_md > :first-child {
+#dmhkyucrth .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#gnoibstmwq .gt_from_md > :last-child {
+#dmhkyucrth .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#gnoibstmwq .gt_row {
+#dmhkyucrth .gt_row {
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 5px;
@@ -651,7 +654,7 @@ Tabell&nbsp;1: Antal biobesök per invånare
   overflow-x: hidden;
 }
 
-#gnoibstmwq .gt_stub {
+#dmhkyucrth .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -664,7 +667,7 @@ Tabell&nbsp;1: Antal biobesök per invånare
   padding-right: 5px;
 }
 
-#gnoibstmwq .gt_stub_row_group {
+#dmhkyucrth .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -678,15 +681,15 @@ Tabell&nbsp;1: Antal biobesök per invånare
   vertical-align: top;
 }
 
-#gnoibstmwq .gt_row_group_first td {
+#dmhkyucrth .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#gnoibstmwq .gt_row_group_first th {
+#dmhkyucrth .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#gnoibstmwq .gt_summary_row {
+#dmhkyucrth .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -696,16 +699,16 @@ Tabell&nbsp;1: Antal biobesök per invånare
   padding-right: 5px;
 }
 
-#gnoibstmwq .gt_first_summary_row {
+#dmhkyucrth .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#gnoibstmwq .gt_first_summary_row.thick {
+#dmhkyucrth .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#gnoibstmwq .gt_last_summary_row {
+#dmhkyucrth .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -715,7 +718,7 @@ Tabell&nbsp;1: Antal biobesök per invånare
   border-bottom-color: #D3D3D3;
 }
 
-#gnoibstmwq .gt_grand_summary_row {
+#dmhkyucrth .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -725,7 +728,7 @@ Tabell&nbsp;1: Antal biobesök per invånare
   padding-right: 5px;
 }
 
-#gnoibstmwq .gt_first_grand_summary_row {
+#dmhkyucrth .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -735,7 +738,7 @@ Tabell&nbsp;1: Antal biobesök per invånare
   border-top-color: #D3D3D3;
 }
 
-#gnoibstmwq .gt_last_grand_summary_row_top {
+#dmhkyucrth .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -745,11 +748,11 @@ Tabell&nbsp;1: Antal biobesök per invånare
   border-bottom-color: #D3D3D3;
 }
 
-#gnoibstmwq .gt_striped {
+#dmhkyucrth .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#gnoibstmwq .gt_table_body {
+#dmhkyucrth .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -758,7 +761,7 @@ Tabell&nbsp;1: Antal biobesök per invånare
   border-bottom-color: #D3D3D3;
 }
 
-#gnoibstmwq .gt_footnotes {
+#dmhkyucrth .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -772,7 +775,7 @@ Tabell&nbsp;1: Antal biobesök per invånare
   border-right-color: #D3D3D3;
 }
 
-#gnoibstmwq .gt_footnote {
+#dmhkyucrth .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -781,7 +784,7 @@ Tabell&nbsp;1: Antal biobesök per invånare
   padding-right: 5px;
 }
 
-#gnoibstmwq .gt_sourcenotes {
+#dmhkyucrth .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -795,7 +798,7 @@ Tabell&nbsp;1: Antal biobesök per invånare
   border-right-color: #D3D3D3;
 }
 
-#gnoibstmwq .gt_sourcenote {
+#dmhkyucrth .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -803,79 +806,79 @@ Tabell&nbsp;1: Antal biobesök per invånare
   padding-right: 5px;
 }
 
-#gnoibstmwq .gt_left {
+#dmhkyucrth .gt_left {
   text-align: left;
 }
 
-#gnoibstmwq .gt_center {
+#dmhkyucrth .gt_center {
   text-align: center;
 }
 
-#gnoibstmwq .gt_right {
+#dmhkyucrth .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#gnoibstmwq .gt_font_normal {
+#dmhkyucrth .gt_font_normal {
   font-weight: normal;
 }
 
-#gnoibstmwq .gt_font_bold {
+#dmhkyucrth .gt_font_bold {
   font-weight: bold;
 }
 
-#gnoibstmwq .gt_font_italic {
+#dmhkyucrth .gt_font_italic {
   font-style: italic;
 }
 
-#gnoibstmwq .gt_super {
+#dmhkyucrth .gt_super {
   font-size: 65%;
 }
 
-#gnoibstmwq .gt_footnote_marks {
+#dmhkyucrth .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#gnoibstmwq .gt_asterisk {
+#dmhkyucrth .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#gnoibstmwq .gt_indent_1 {
+#dmhkyucrth .gt_indent_1 {
   text-indent: 5px;
 }
 
-#gnoibstmwq .gt_indent_2 {
+#dmhkyucrth .gt_indent_2 {
   text-indent: 10px;
 }
 
-#gnoibstmwq .gt_indent_3 {
+#dmhkyucrth .gt_indent_3 {
   text-indent: 15px;
 }
 
-#gnoibstmwq .gt_indent_4 {
+#dmhkyucrth .gt_indent_4 {
   text-indent: 20px;
 }
 
-#gnoibstmwq .gt_indent_5 {
+#dmhkyucrth .gt_indent_5 {
   text-indent: 25px;
 }
 
-#gnoibstmwq .katex-display {
+#dmhkyucrth .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#gnoibstmwq div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#dmhkyucrth div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
 
-<table class="gt_table do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<table class="gt_table do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
 <thead>
-<tr class="header gt_col_headings">
+<tr class="gt_col_headings header">
 <th id="Region" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="font-weight: bold" scope="col">Region</th>
 <th id="a2023" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="font-weight: bold" scope="col">2023</th>
 <th id="a2024" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="font-weight: bold" scope="col">2024</th>
@@ -892,8 +895,8 @@ Tabell&nbsp;1: Antal biobesök per invånare
 <td class="gt_row gt_center" headers="2023" style="background-color: #B81867; color: #FFFFFF">1.1</td>
 <td class="gt_row gt_center" headers="2024" style="background-color: #B81867; color: #FFFFFF">1.1</td>
 </tr>
-</tbody><tfoot class="gt_sourcenotes">
-<tr class="odd">
+</tbody><tfoot>
+<tr class="gt_sourcenotes odd">
 <td colspan="3" class="gt_sourcenote">Källa: Kulturanalys</td>
 </tr>
 </tfoot>
@@ -914,23 +917,23 @@ Tabell&nbsp;2: Antal visningar per tusen invånare
 </figcaption>
 <div aria-describedby="tbl-biosalonger_vis-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div id="maiyirwmtu" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#maiyirwmtu table {
+<div id="ahdytmwedc" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#ahdytmwedc table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#maiyirwmtu thead, #maiyirwmtu tbody, #maiyirwmtu tfoot, #maiyirwmtu tr, #maiyirwmtu td, #maiyirwmtu th {
+#ahdytmwedc thead, #ahdytmwedc tbody, #ahdytmwedc tfoot, #ahdytmwedc tr, #ahdytmwedc td, #ahdytmwedc th {
   border-style: none;
 }
 
-#maiyirwmtu p {
+#ahdytmwedc p {
   margin: 0;
   padding: 0;
 }
 
-#maiyirwmtu .gt_table {
+#ahdytmwedc .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -956,12 +959,12 @@ Tabell&nbsp;2: Antal visningar per tusen invånare
   border-left-color: #D3D3D3;
 }
 
-#maiyirwmtu .gt_caption {
+#ahdytmwedc .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#maiyirwmtu .gt_title {
+#ahdytmwedc .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -973,7 +976,7 @@ Tabell&nbsp;2: Antal visningar per tusen invånare
   border-bottom-width: 0;
 }
 
-#maiyirwmtu .gt_subtitle {
+#ahdytmwedc .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -985,7 +988,7 @@ Tabell&nbsp;2: Antal visningar per tusen invånare
   border-top-width: 0;
 }
 
-#maiyirwmtu .gt_heading {
+#ahdytmwedc .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -997,13 +1000,13 @@ Tabell&nbsp;2: Antal visningar per tusen invånare
   border-right-color: #D3D3D3;
 }
 
-#maiyirwmtu .gt_bottom_border {
+#ahdytmwedc .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#maiyirwmtu .gt_col_headings {
+#ahdytmwedc .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1018,7 +1021,7 @@ Tabell&nbsp;2: Antal visningar per tusen invånare
   border-right-color: #D3D3D3;
 }
 
-#maiyirwmtu .gt_col_heading {
+#ahdytmwedc .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1038,7 +1041,7 @@ Tabell&nbsp;2: Antal visningar per tusen invånare
   overflow-x: hidden;
 }
 
-#maiyirwmtu .gt_column_spanner_outer {
+#ahdytmwedc .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1050,15 +1053,15 @@ Tabell&nbsp;2: Antal visningar per tusen invånare
   padding-right: 4px;
 }
 
-#maiyirwmtu .gt_column_spanner_outer:first-child {
+#ahdytmwedc .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#maiyirwmtu .gt_column_spanner_outer:last-child {
+#ahdytmwedc .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#maiyirwmtu .gt_column_spanner {
+#ahdytmwedc .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1070,11 +1073,11 @@ Tabell&nbsp;2: Antal visningar per tusen invånare
   width: 100%;
 }
 
-#maiyirwmtu .gt_spanner_row {
+#ahdytmwedc .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#maiyirwmtu .gt_group_heading {
+#ahdytmwedc .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1100,7 +1103,7 @@ Tabell&nbsp;2: Antal visningar per tusen invånare
   text-align: left;
 }
 
-#maiyirwmtu .gt_empty_group_heading {
+#ahdytmwedc .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1115,15 +1118,15 @@ Tabell&nbsp;2: Antal visningar per tusen invånare
   vertical-align: middle;
 }
 
-#maiyirwmtu .gt_from_md > :first-child {
+#ahdytmwedc .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#maiyirwmtu .gt_from_md > :last-child {
+#ahdytmwedc .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#maiyirwmtu .gt_row {
+#ahdytmwedc .gt_row {
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 5px;
@@ -1142,7 +1145,7 @@ Tabell&nbsp;2: Antal visningar per tusen invånare
   overflow-x: hidden;
 }
 
-#maiyirwmtu .gt_stub {
+#ahdytmwedc .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1155,7 +1158,7 @@ Tabell&nbsp;2: Antal visningar per tusen invånare
   padding-right: 5px;
 }
 
-#maiyirwmtu .gt_stub_row_group {
+#ahdytmwedc .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1169,15 +1172,15 @@ Tabell&nbsp;2: Antal visningar per tusen invånare
   vertical-align: top;
 }
 
-#maiyirwmtu .gt_row_group_first td {
+#ahdytmwedc .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#maiyirwmtu .gt_row_group_first th {
+#ahdytmwedc .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#maiyirwmtu .gt_summary_row {
+#ahdytmwedc .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1187,16 +1190,16 @@ Tabell&nbsp;2: Antal visningar per tusen invånare
   padding-right: 5px;
 }
 
-#maiyirwmtu .gt_first_summary_row {
+#ahdytmwedc .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#maiyirwmtu .gt_first_summary_row.thick {
+#ahdytmwedc .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#maiyirwmtu .gt_last_summary_row {
+#ahdytmwedc .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1206,7 +1209,7 @@ Tabell&nbsp;2: Antal visningar per tusen invånare
   border-bottom-color: #D3D3D3;
 }
 
-#maiyirwmtu .gt_grand_summary_row {
+#ahdytmwedc .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1216,7 +1219,7 @@ Tabell&nbsp;2: Antal visningar per tusen invånare
   padding-right: 5px;
 }
 
-#maiyirwmtu .gt_first_grand_summary_row {
+#ahdytmwedc .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1226,7 +1229,7 @@ Tabell&nbsp;2: Antal visningar per tusen invånare
   border-top-color: #D3D3D3;
 }
 
-#maiyirwmtu .gt_last_grand_summary_row_top {
+#ahdytmwedc .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1236,11 +1239,11 @@ Tabell&nbsp;2: Antal visningar per tusen invånare
   border-bottom-color: #D3D3D3;
 }
 
-#maiyirwmtu .gt_striped {
+#ahdytmwedc .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#maiyirwmtu .gt_table_body {
+#ahdytmwedc .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1249,7 +1252,7 @@ Tabell&nbsp;2: Antal visningar per tusen invånare
   border-bottom-color: #D3D3D3;
 }
 
-#maiyirwmtu .gt_footnotes {
+#ahdytmwedc .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1263,7 +1266,7 @@ Tabell&nbsp;2: Antal visningar per tusen invånare
   border-right-color: #D3D3D3;
 }
 
-#maiyirwmtu .gt_footnote {
+#ahdytmwedc .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1272,7 +1275,7 @@ Tabell&nbsp;2: Antal visningar per tusen invånare
   padding-right: 5px;
 }
 
-#maiyirwmtu .gt_sourcenotes {
+#ahdytmwedc .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1286,7 +1289,7 @@ Tabell&nbsp;2: Antal visningar per tusen invånare
   border-right-color: #D3D3D3;
 }
 
-#maiyirwmtu .gt_sourcenote {
+#ahdytmwedc .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1294,79 +1297,79 @@ Tabell&nbsp;2: Antal visningar per tusen invånare
   padding-right: 5px;
 }
 
-#maiyirwmtu .gt_left {
+#ahdytmwedc .gt_left {
   text-align: left;
 }
 
-#maiyirwmtu .gt_center {
+#ahdytmwedc .gt_center {
   text-align: center;
 }
 
-#maiyirwmtu .gt_right {
+#ahdytmwedc .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#maiyirwmtu .gt_font_normal {
+#ahdytmwedc .gt_font_normal {
   font-weight: normal;
 }
 
-#maiyirwmtu .gt_font_bold {
+#ahdytmwedc .gt_font_bold {
   font-weight: bold;
 }
 
-#maiyirwmtu .gt_font_italic {
+#ahdytmwedc .gt_font_italic {
   font-style: italic;
 }
 
-#maiyirwmtu .gt_super {
+#ahdytmwedc .gt_super {
   font-size: 65%;
 }
 
-#maiyirwmtu .gt_footnote_marks {
+#ahdytmwedc .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#maiyirwmtu .gt_asterisk {
+#ahdytmwedc .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#maiyirwmtu .gt_indent_1 {
+#ahdytmwedc .gt_indent_1 {
   text-indent: 5px;
 }
 
-#maiyirwmtu .gt_indent_2 {
+#ahdytmwedc .gt_indent_2 {
   text-indent: 10px;
 }
 
-#maiyirwmtu .gt_indent_3 {
+#ahdytmwedc .gt_indent_3 {
   text-indent: 15px;
 }
 
-#maiyirwmtu .gt_indent_4 {
+#ahdytmwedc .gt_indent_4 {
   text-indent: 20px;
 }
 
-#maiyirwmtu .gt_indent_5 {
+#ahdytmwedc .gt_indent_5 {
   text-indent: 25px;
 }
 
-#maiyirwmtu .katex-display {
+#ahdytmwedc .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#maiyirwmtu div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#ahdytmwedc div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
 
-<table class="gt_table do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<table class="gt_table do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
 <thead>
-<tr class="header gt_col_headings">
+<tr class="gt_col_headings header">
 <th id="Region" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="font-weight: bold" scope="col">Region</th>
 <th id="a2023" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="font-weight: bold" scope="col">2023</th>
 <th id="a2024" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="font-weight: bold" scope="col">2024</th>
@@ -1383,8 +1386,8 @@ Tabell&nbsp;2: Antal visningar per tusen invånare
 <td class="gt_row gt_center" headers="2023" style="background-color: #B81867; color: #FFFFFF">81.4</td>
 <td class="gt_row gt_center" headers="2024" style="background-color: #C13B75; color: #FFFFFF">78.2</td>
 </tr>
-</tbody><tfoot class="gt_sourcenotes">
-<tr class="odd">
+</tbody><tfoot>
+<tr class="gt_sourcenotes odd">
 <td colspan="3" class="gt_sourcenote">Källa: Kulturanalys</td>
 </tr>
 </tfoot>
@@ -1411,23 +1414,23 @@ Tabell&nbsp;3: Antal biografer per kommun
 </figcaption>
 <div aria-describedby="tbl-biografer-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div id="qjgytbtbrk" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#qjgytbtbrk table {
+<div id="iplspdvwsy" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#iplspdvwsy table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#qjgytbtbrk thead, #qjgytbtbrk tbody, #qjgytbtbrk tfoot, #qjgytbtbrk tr, #qjgytbtbrk td, #qjgytbtbrk th {
+#iplspdvwsy thead, #iplspdvwsy tbody, #iplspdvwsy tfoot, #iplspdvwsy tr, #iplspdvwsy td, #iplspdvwsy th {
   border-style: none;
 }
 
-#qjgytbtbrk p {
+#iplspdvwsy p {
   margin: 0;
   padding: 0;
 }
 
-#qjgytbtbrk .gt_table {
+#iplspdvwsy .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1453,12 +1456,12 @@ Tabell&nbsp;3: Antal biografer per kommun
   border-left-color: #D3D3D3;
 }
 
-#qjgytbtbrk .gt_caption {
+#iplspdvwsy .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#qjgytbtbrk .gt_title {
+#iplspdvwsy .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1470,7 +1473,7 @@ Tabell&nbsp;3: Antal biografer per kommun
   border-bottom-width: 0;
 }
 
-#qjgytbtbrk .gt_subtitle {
+#iplspdvwsy .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1482,7 +1485,7 @@ Tabell&nbsp;3: Antal biografer per kommun
   border-top-width: 0;
 }
 
-#qjgytbtbrk .gt_heading {
+#iplspdvwsy .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1494,13 +1497,13 @@ Tabell&nbsp;3: Antal biografer per kommun
   border-right-color: #D3D3D3;
 }
 
-#qjgytbtbrk .gt_bottom_border {
+#iplspdvwsy .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#qjgytbtbrk .gt_col_headings {
+#iplspdvwsy .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1515,7 +1518,7 @@ Tabell&nbsp;3: Antal biografer per kommun
   border-right-color: #D3D3D3;
 }
 
-#qjgytbtbrk .gt_col_heading {
+#iplspdvwsy .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1535,7 +1538,7 @@ Tabell&nbsp;3: Antal biografer per kommun
   overflow-x: hidden;
 }
 
-#qjgytbtbrk .gt_column_spanner_outer {
+#iplspdvwsy .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1547,15 +1550,15 @@ Tabell&nbsp;3: Antal biografer per kommun
   padding-right: 4px;
 }
 
-#qjgytbtbrk .gt_column_spanner_outer:first-child {
+#iplspdvwsy .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#qjgytbtbrk .gt_column_spanner_outer:last-child {
+#iplspdvwsy .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#qjgytbtbrk .gt_column_spanner {
+#iplspdvwsy .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1567,11 +1570,11 @@ Tabell&nbsp;3: Antal biografer per kommun
   width: 100%;
 }
 
-#qjgytbtbrk .gt_spanner_row {
+#iplspdvwsy .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#qjgytbtbrk .gt_group_heading {
+#iplspdvwsy .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1597,7 +1600,7 @@ Tabell&nbsp;3: Antal biografer per kommun
   text-align: left;
 }
 
-#qjgytbtbrk .gt_empty_group_heading {
+#iplspdvwsy .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1612,15 +1615,15 @@ Tabell&nbsp;3: Antal biografer per kommun
   vertical-align: middle;
 }
 
-#qjgytbtbrk .gt_from_md > :first-child {
+#iplspdvwsy .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#qjgytbtbrk .gt_from_md > :last-child {
+#iplspdvwsy .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#qjgytbtbrk .gt_row {
+#iplspdvwsy .gt_row {
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 5px;
@@ -1639,7 +1642,7 @@ Tabell&nbsp;3: Antal biografer per kommun
   overflow-x: hidden;
 }
 
-#qjgytbtbrk .gt_stub {
+#iplspdvwsy .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1652,7 +1655,7 @@ Tabell&nbsp;3: Antal biografer per kommun
   padding-right: 5px;
 }
 
-#qjgytbtbrk .gt_stub_row_group {
+#iplspdvwsy .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1666,15 +1669,15 @@ Tabell&nbsp;3: Antal biografer per kommun
   vertical-align: top;
 }
 
-#qjgytbtbrk .gt_row_group_first td {
+#iplspdvwsy .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#qjgytbtbrk .gt_row_group_first th {
+#iplspdvwsy .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#qjgytbtbrk .gt_summary_row {
+#iplspdvwsy .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1684,16 +1687,16 @@ Tabell&nbsp;3: Antal biografer per kommun
   padding-right: 5px;
 }
 
-#qjgytbtbrk .gt_first_summary_row {
+#iplspdvwsy .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#qjgytbtbrk .gt_first_summary_row.thick {
+#iplspdvwsy .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#qjgytbtbrk .gt_last_summary_row {
+#iplspdvwsy .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1703,7 +1706,7 @@ Tabell&nbsp;3: Antal biografer per kommun
   border-bottom-color: #D3D3D3;
 }
 
-#qjgytbtbrk .gt_grand_summary_row {
+#iplspdvwsy .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1713,7 +1716,7 @@ Tabell&nbsp;3: Antal biografer per kommun
   padding-right: 5px;
 }
 
-#qjgytbtbrk .gt_first_grand_summary_row {
+#iplspdvwsy .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1723,7 +1726,7 @@ Tabell&nbsp;3: Antal biografer per kommun
   border-top-color: #D3D3D3;
 }
 
-#qjgytbtbrk .gt_last_grand_summary_row_top {
+#iplspdvwsy .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1733,11 +1736,11 @@ Tabell&nbsp;3: Antal biografer per kommun
   border-bottom-color: #D3D3D3;
 }
 
-#qjgytbtbrk .gt_striped {
+#iplspdvwsy .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#qjgytbtbrk .gt_table_body {
+#iplspdvwsy .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1746,7 +1749,7 @@ Tabell&nbsp;3: Antal biografer per kommun
   border-bottom-color: #D3D3D3;
 }
 
-#qjgytbtbrk .gt_footnotes {
+#iplspdvwsy .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1760,7 +1763,7 @@ Tabell&nbsp;3: Antal biografer per kommun
   border-right-color: #D3D3D3;
 }
 
-#qjgytbtbrk .gt_footnote {
+#iplspdvwsy .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1769,7 +1772,7 @@ Tabell&nbsp;3: Antal biografer per kommun
   padding-right: 5px;
 }
 
-#qjgytbtbrk .gt_sourcenotes {
+#iplspdvwsy .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1783,7 +1786,7 @@ Tabell&nbsp;3: Antal biografer per kommun
   border-right-color: #D3D3D3;
 }
 
-#qjgytbtbrk .gt_sourcenote {
+#iplspdvwsy .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1791,79 +1794,79 @@ Tabell&nbsp;3: Antal biografer per kommun
   padding-right: 5px;
 }
 
-#qjgytbtbrk .gt_left {
+#iplspdvwsy .gt_left {
   text-align: left;
 }
 
-#qjgytbtbrk .gt_center {
+#iplspdvwsy .gt_center {
   text-align: center;
 }
 
-#qjgytbtbrk .gt_right {
+#iplspdvwsy .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#qjgytbtbrk .gt_font_normal {
+#iplspdvwsy .gt_font_normal {
   font-weight: normal;
 }
 
-#qjgytbtbrk .gt_font_bold {
+#iplspdvwsy .gt_font_bold {
   font-weight: bold;
 }
 
-#qjgytbtbrk .gt_font_italic {
+#iplspdvwsy .gt_font_italic {
   font-style: italic;
 }
 
-#qjgytbtbrk .gt_super {
+#iplspdvwsy .gt_super {
   font-size: 65%;
 }
 
-#qjgytbtbrk .gt_footnote_marks {
+#iplspdvwsy .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#qjgytbtbrk .gt_asterisk {
+#iplspdvwsy .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#qjgytbtbrk .gt_indent_1 {
+#iplspdvwsy .gt_indent_1 {
   text-indent: 5px;
 }
 
-#qjgytbtbrk .gt_indent_2 {
+#iplspdvwsy .gt_indent_2 {
   text-indent: 10px;
 }
 
-#qjgytbtbrk .gt_indent_3 {
+#iplspdvwsy .gt_indent_3 {
   text-indent: 15px;
 }
 
-#qjgytbtbrk .gt_indent_4 {
+#iplspdvwsy .gt_indent_4 {
   text-indent: 20px;
 }
 
-#qjgytbtbrk .gt_indent_5 {
+#iplspdvwsy .gt_indent_5 {
   text-indent: 25px;
 }
 
-#qjgytbtbrk .katex-display {
+#iplspdvwsy .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#qjgytbtbrk div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#iplspdvwsy div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
 
-<table class="gt_table do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<table class="gt_table do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
 <thead>
-<tr class="header gt_col_headings">
+<tr class="gt_col_headings header">
 <th id="Kommun" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="font-weight: bold" scope="col">Kommun</th>
 <th id="a2023" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="font-weight: bold" scope="col">2023</th>
 <th id="a2024" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="font-weight: bold" scope="col">2024</th>
@@ -1910,8 +1913,8 @@ Tabell&nbsp;3: Antal biografer per kommun
 <td class="gt_row gt_center" headers="2023" style="background-color: #EEC3D4; color: #000000">2</td>
 <td class="gt_row gt_center" headers="2024" style="background-color: #EEC3D4; color: #000000">2</td>
 </tr>
-</tbody><tfoot class="gt_sourcenotes">
-<tr class="odd">
+</tbody><tfoot>
+<tr class="gt_sourcenotes odd">
 <td colspan="3" class="gt_sourcenote">Källa: Kulturanalys</td>
 </tr>
 </tfoot>
@@ -1930,7 +1933,7 @@ Tabell&nbsp;3: Antal biografer per kommun
 </section>
 <section id="bibliotek" class="level1">
 <h1>Bibliotek</h1>
-<p>Kapitlet beskriver omfattningen och användningen av offentligt finansierade bibliotek. Uppgifterna ger en översikt av verksamheten och hur den har utvecklats över tid. Uppgifterna samlas in och publiceras av <span class="citation" data-cites="bibstat">Kungliga biblioteket (<a href="#ref-bibstat" role="doc-biblioref">2025</a>)</span> inom ramen för den officiella biblioteksstatistiken..</p>
+<p>Kapitlet beskriver omfattningen och användningen av offentligt finansierade bibliotek. Uppgifterna ger en översikt av verksamheten och hur den har utvecklats över tid. Uppgifterna samlas in och publiceras av <span class="citation" data-cites="bibstat">Kungliga biblioteket (<a href="#ref-bibstat" role="doc-biblioref">2025</a>)</span> inom ramen för den officiella biblioteksstatistiken.</p>
 <ul>
 <li><em>Utlån av fysiska böcker:</em>
 <ul>
@@ -1943,7 +1946,7 @@ Tabell&nbsp;3: Antal biografer per kommun
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Bibliotekstyper
+<span class="screen-reader-only">Notera</span>Bibliotekstyper
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -1968,7 +1971,7 @@ Bibliotekstyper
 </div>
 </div>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Enköping</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Heby</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false">Håbo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-4" role="tab" aria-controls="tabset-2-4" aria-selected="false">Knivsta</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-5" role="tab" aria-controls="tabset-2-5" aria-selected="false">Tierp</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-6" role="tab" aria-controls="tabset-2-6" aria-selected="false">Uppsala</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-7" role="tab" aria-controls="tabset-2-7" aria-selected="false">Älvkarleby</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-8-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-8" role="tab" aria-controls="tabset-2-8" aria-selected="false">Östhammar</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">Enköping</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Heby</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">Håbo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-4" role="tab" aria-controls="tabset-2-4" aria-selected="false" href="">Knivsta</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-5" role="tab" aria-controls="tabset-2-5" aria-selected="false" href="">Tierp</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-6" role="tab" aria-controls="tabset-2-6" aria-selected="false" href="">Uppsala</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-7" role="tab" aria-controls="tabset-2-7" aria-selected="false" href="">Älvkarleby</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-8-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-8" role="tab" aria-controls="tabset-2-8" aria-selected="false" href="">Östhammar</a></li></ul>
 <div class="tab-content">
 <div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
 <img src="Figurer/biblioteks_antal_lan_Enköping.svg" alt="Figuren visar utvecklingen av totalt antal lån av fysiska medium över tid för Enköping  per år uppdelat på bibliotekstyp." style="width:100%; max-width:800px; height:100%;">
@@ -2077,7 +2080,7 @@ Bibliotekstyper
 </ul>
 <p>Data är hämtat från <span class="citation" data-cites="bibstat">Kungliga biblioteket (<a href="#ref-bibstat" role="doc-biblioref">2025</a>)</span>.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">Bibliotek Uppsala</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">Enköpings kommunbibliotek</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false">Heby bibliotek</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-4" role="tab" aria-controls="tabset-3-4" aria-selected="false">Håbo bibliotek</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-5" role="tab" aria-controls="tabset-3-5" aria-selected="false">Knivsta bibliotek</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-6" role="tab" aria-controls="tabset-3-6" aria-selected="false">Kulturhuset Möbelns bibliotek</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-7" role="tab" aria-controls="tabset-3-7" aria-selected="false">Älvkarleby folkbibliotek</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-8-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-8" role="tab" aria-controls="tabset-3-8" aria-selected="false">Östhammars stadsbibliotek</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">Bibliotek Uppsala</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">Enköpings kommunbibliotek</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false" href="">Heby bibliotek</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-4" role="tab" aria-controls="tabset-3-4" aria-selected="false" href="">Håbo bibliotek</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-5" role="tab" aria-controls="tabset-3-5" aria-selected="false" href="">Knivsta bibliotek</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-6" role="tab" aria-controls="tabset-3-6" aria-selected="false" href="">Kulturhuset Möbelns bibliotek</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-7" role="tab" aria-controls="tabset-3-7" aria-selected="false" href="">Älvkarleby folkbibliotek</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-8-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-8" role="tab" aria-controls="tabset-3-8" aria-selected="false" href="">Östhammars stadsbibliotek</a></li></ul>
 <div class="tab-content">
 <div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
 <img src="Figurer/biblioteks_folk_Bibliotek Uppsala.svg" alt="Figuren visar utvecklingen över tid för Bibliotek Uppsala med tre linjediagram: antal fysiska besök, totalt antal utlån samt antal aktiva låntagare per år." style="width:100%; max-width:800px; height:100%;">
@@ -2181,7 +2184,7 @@ Bibliotekstyper
 <p>Data om Fritidskortet är hämtad från <span class="citation" data-cites="ehalso"><span>”Så har Fritidskortet använts 2025”</span> (<a href="#ref-ehalso" role="doc-biblioref">u.å.</a>)</span> och baseras på registreringar av beviljade och använda kort. Detta avsnitt redovisar antal beviljade kort, antal använda kort samt andel använda kort av de beviljade.</p>
 <p>Medianen visar det värde som ligger i mitten när alla kommuner rangordnas efter antal kort eller andel använda kort. Fördelningen mellan kommuner visas också med nedre och övre kvartil, vilket ger en bild av variationen mellan kommuner. Eftersom varje kommun räknas lika mycket, påverkas resultatet inte av hur många barn som bor i kommunen. Det betyder att små och stora kommuner väger lika i statistiken.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true">Antal beviljade fritidskort</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false">Antal använda fritidskort</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-3" role="tab" aria-controls="tabset-4-3" aria-selected="false">Andel använda fritidskort av de beviljade korten</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true" href="">Antal beviljade fritidskort</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false" href="">Antal använda fritidskort</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-3" role="tab" aria-controls="tabset-4-3" aria-selected="false" href="">Andel använda fritidskort av de beviljade korten</a></li></ul>
 <div class="tab-content">
 <div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
 <img src="Figurer/fritidskort_kommun_Antal_beviljade_fritidskort.svg" alt="Figuren visar aningen antal beviljade fritidskort, antal använda fritidskort eller kvoten mellan antal använda dividerat på antal använda fritidskort för länets kommuner.9" style="width:100%; max-width:800px; height:100%;">
@@ -2258,7 +2261,7 @@ Figur&nbsp;4
 <p>Data är hämtat från <span class="citation" data-cites="kolada">Rådet för främjande av kommunala analyser (<a href="#ref-kolada" role="doc-biblioref">2025</a>)</span> som hänvisar till <span class="citation" data-cites="scb_statistikdatabasen">Statistiska centralbyrån (SCB) (<a href="#ref-scb_statistikdatabasen" role="doc-biblioref">2025c</a>)</span> och <span class="citation" data-cites="kulturradet">Kulturrådet (<a href="#ref-kulturradet" role="doc-biblioref">2025</a>)</span>.</p>
 <p>Antal unika individer totalt som går i musik- eller kulturskola, baserat på enkätfråga. Data är hämtat från <span class="citation" data-cites="kolada">Rådet för främjande av kommunala analyser (<a href="#ref-kolada" role="doc-biblioref">2025</a>)</span> som hänvisar till <span class="citation" data-cites="kulturradet">Kulturrådet (<a href="#ref-kulturradet" role="doc-biblioref">2025</a>)</span>.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-5-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-1" role="tab" aria-controls="tabset-5-1" aria-selected="true">6-15</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-2" role="tab" aria-controls="tabset-5-2" aria-selected="false">6-19</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-5-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-1" role="tab" aria-controls="tabset-5-1" aria-selected="true" href="">6-15</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-2" role="tab" aria-controls="tabset-5-2" aria-selected="false" href="">6-19</a></li></ul>
 <div class="tab-content">
 <div id="tabset-5-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-5-1-tab">
 <img src="Figurer/elever_mk_6-15.svg" alt="Figuren visar utvecklingen av andelen elever i musik- och kulturskola för de kommunerna med data för åldrarna6-15" style="width:100%; max-width:800px; height:100%;">
@@ -2292,23 +2295,23 @@ Tabell&nbsp;4: Antal unika individer totalt som går i musik- eller kulturskola,
 </figcaption>
 <div aria-describedby="tbl-antal_deltagare-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div id="rtdkkfeuvg" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#rtdkkfeuvg table {
+<div id="dnachpjznj" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#dnachpjznj table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#rtdkkfeuvg thead, #rtdkkfeuvg tbody, #rtdkkfeuvg tfoot, #rtdkkfeuvg tr, #rtdkkfeuvg td, #rtdkkfeuvg th {
+#dnachpjznj thead, #dnachpjznj tbody, #dnachpjznj tfoot, #dnachpjznj tr, #dnachpjznj td, #dnachpjznj th {
   border-style: none;
 }
 
-#rtdkkfeuvg p {
+#dnachpjznj p {
   margin: 0;
   padding: 0;
 }
 
-#rtdkkfeuvg .gt_table {
+#dnachpjznj .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -2334,12 +2337,12 @@ Tabell&nbsp;4: Antal unika individer totalt som går i musik- eller kulturskola,
   border-left-color: #D3D3D3;
 }
 
-#rtdkkfeuvg .gt_caption {
+#dnachpjznj .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#rtdkkfeuvg .gt_title {
+#dnachpjznj .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -2351,7 +2354,7 @@ Tabell&nbsp;4: Antal unika individer totalt som går i musik- eller kulturskola,
   border-bottom-width: 0;
 }
 
-#rtdkkfeuvg .gt_subtitle {
+#dnachpjznj .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -2363,7 +2366,7 @@ Tabell&nbsp;4: Antal unika individer totalt som går i musik- eller kulturskola,
   border-top-width: 0;
 }
 
-#rtdkkfeuvg .gt_heading {
+#dnachpjznj .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -2375,13 +2378,13 @@ Tabell&nbsp;4: Antal unika individer totalt som går i musik- eller kulturskola,
   border-right-color: #D3D3D3;
 }
 
-#rtdkkfeuvg .gt_bottom_border {
+#dnachpjznj .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#rtdkkfeuvg .gt_col_headings {
+#dnachpjznj .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2396,7 +2399,7 @@ Tabell&nbsp;4: Antal unika individer totalt som går i musik- eller kulturskola,
   border-right-color: #D3D3D3;
 }
 
-#rtdkkfeuvg .gt_col_heading {
+#dnachpjznj .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2416,7 +2419,7 @@ Tabell&nbsp;4: Antal unika individer totalt som går i musik- eller kulturskola,
   overflow-x: hidden;
 }
 
-#rtdkkfeuvg .gt_column_spanner_outer {
+#dnachpjznj .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2428,15 +2431,15 @@ Tabell&nbsp;4: Antal unika individer totalt som går i musik- eller kulturskola,
   padding-right: 4px;
 }
 
-#rtdkkfeuvg .gt_column_spanner_outer:first-child {
+#dnachpjznj .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#rtdkkfeuvg .gt_column_spanner_outer:last-child {
+#dnachpjznj .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#rtdkkfeuvg .gt_column_spanner {
+#dnachpjznj .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -2448,11 +2451,11 @@ Tabell&nbsp;4: Antal unika individer totalt som går i musik- eller kulturskola,
   width: 100%;
 }
 
-#rtdkkfeuvg .gt_spanner_row {
+#dnachpjznj .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#rtdkkfeuvg .gt_group_heading {
+#dnachpjznj .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2478,7 +2481,7 @@ Tabell&nbsp;4: Antal unika individer totalt som går i musik- eller kulturskola,
   text-align: left;
 }
 
-#rtdkkfeuvg .gt_empty_group_heading {
+#dnachpjznj .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -2493,15 +2496,15 @@ Tabell&nbsp;4: Antal unika individer totalt som går i musik- eller kulturskola,
   vertical-align: middle;
 }
 
-#rtdkkfeuvg .gt_from_md > :first-child {
+#dnachpjznj .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#rtdkkfeuvg .gt_from_md > :last-child {
+#dnachpjznj .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#rtdkkfeuvg .gt_row {
+#dnachpjznj .gt_row {
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 5px;
@@ -2520,7 +2523,7 @@ Tabell&nbsp;4: Antal unika individer totalt som går i musik- eller kulturskola,
   overflow-x: hidden;
 }
 
-#rtdkkfeuvg .gt_stub {
+#dnachpjznj .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2533,7 +2536,7 @@ Tabell&nbsp;4: Antal unika individer totalt som går i musik- eller kulturskola,
   padding-right: 5px;
 }
 
-#rtdkkfeuvg .gt_stub_row_group {
+#dnachpjznj .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2547,15 +2550,15 @@ Tabell&nbsp;4: Antal unika individer totalt som går i musik- eller kulturskola,
   vertical-align: top;
 }
 
-#rtdkkfeuvg .gt_row_group_first td {
+#dnachpjznj .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#rtdkkfeuvg .gt_row_group_first th {
+#dnachpjznj .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#rtdkkfeuvg .gt_summary_row {
+#dnachpjznj .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2565,16 +2568,16 @@ Tabell&nbsp;4: Antal unika individer totalt som går i musik- eller kulturskola,
   padding-right: 5px;
 }
 
-#rtdkkfeuvg .gt_first_summary_row {
+#dnachpjznj .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#rtdkkfeuvg .gt_first_summary_row.thick {
+#dnachpjznj .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#rtdkkfeuvg .gt_last_summary_row {
+#dnachpjznj .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2584,7 +2587,7 @@ Tabell&nbsp;4: Antal unika individer totalt som går i musik- eller kulturskola,
   border-bottom-color: #D3D3D3;
 }
 
-#rtdkkfeuvg .gt_grand_summary_row {
+#dnachpjznj .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2594,7 +2597,7 @@ Tabell&nbsp;4: Antal unika individer totalt som går i musik- eller kulturskola,
   padding-right: 5px;
 }
 
-#rtdkkfeuvg .gt_first_grand_summary_row {
+#dnachpjznj .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2604,7 +2607,7 @@ Tabell&nbsp;4: Antal unika individer totalt som går i musik- eller kulturskola,
   border-top-color: #D3D3D3;
 }
 
-#rtdkkfeuvg .gt_last_grand_summary_row_top {
+#dnachpjznj .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2614,11 +2617,11 @@ Tabell&nbsp;4: Antal unika individer totalt som går i musik- eller kulturskola,
   border-bottom-color: #D3D3D3;
 }
 
-#rtdkkfeuvg .gt_striped {
+#dnachpjznj .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#rtdkkfeuvg .gt_table_body {
+#dnachpjznj .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2627,7 +2630,7 @@ Tabell&nbsp;4: Antal unika individer totalt som går i musik- eller kulturskola,
   border-bottom-color: #D3D3D3;
 }
 
-#rtdkkfeuvg .gt_footnotes {
+#dnachpjznj .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2641,7 +2644,7 @@ Tabell&nbsp;4: Antal unika individer totalt som går i musik- eller kulturskola,
   border-right-color: #D3D3D3;
 }
 
-#rtdkkfeuvg .gt_footnote {
+#dnachpjznj .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -2650,7 +2653,7 @@ Tabell&nbsp;4: Antal unika individer totalt som går i musik- eller kulturskola,
   padding-right: 5px;
 }
 
-#rtdkkfeuvg .gt_sourcenotes {
+#dnachpjznj .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2664,7 +2667,7 @@ Tabell&nbsp;4: Antal unika individer totalt som går i musik- eller kulturskola,
   border-right-color: #D3D3D3;
 }
 
-#rtdkkfeuvg .gt_sourcenote {
+#dnachpjznj .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -2672,79 +2675,79 @@ Tabell&nbsp;4: Antal unika individer totalt som går i musik- eller kulturskola,
   padding-right: 5px;
 }
 
-#rtdkkfeuvg .gt_left {
+#dnachpjznj .gt_left {
   text-align: left;
 }
 
-#rtdkkfeuvg .gt_center {
+#dnachpjznj .gt_center {
   text-align: center;
 }
 
-#rtdkkfeuvg .gt_right {
+#dnachpjznj .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#rtdkkfeuvg .gt_font_normal {
+#dnachpjznj .gt_font_normal {
   font-weight: normal;
 }
 
-#rtdkkfeuvg .gt_font_bold {
+#dnachpjznj .gt_font_bold {
   font-weight: bold;
 }
 
-#rtdkkfeuvg .gt_font_italic {
+#dnachpjznj .gt_font_italic {
   font-style: italic;
 }
 
-#rtdkkfeuvg .gt_super {
+#dnachpjznj .gt_super {
   font-size: 65%;
 }
 
-#rtdkkfeuvg .gt_footnote_marks {
+#dnachpjznj .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#rtdkkfeuvg .gt_asterisk {
+#dnachpjznj .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#rtdkkfeuvg .gt_indent_1 {
+#dnachpjznj .gt_indent_1 {
   text-indent: 5px;
 }
 
-#rtdkkfeuvg .gt_indent_2 {
+#dnachpjznj .gt_indent_2 {
   text-indent: 10px;
 }
 
-#rtdkkfeuvg .gt_indent_3 {
+#dnachpjznj .gt_indent_3 {
   text-indent: 15px;
 }
 
-#rtdkkfeuvg .gt_indent_4 {
+#dnachpjznj .gt_indent_4 {
   text-indent: 20px;
 }
 
-#rtdkkfeuvg .gt_indent_5 {
+#dnachpjznj .gt_indent_5 {
   text-indent: 25px;
 }
 
-#rtdkkfeuvg .katex-display {
+#dnachpjznj .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#rtdkkfeuvg div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#dnachpjznj div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
 
-<table class="gt_table do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<table class="gt_table do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
 <thead>
-<tr class="header gt_col_headings">
+<tr class="gt_col_headings header">
 <th id="Kommun" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="font-weight: bold" scope="col">Kommun</th>
 <th id="a2019" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="font-weight: bold" scope="col">2019</th>
 <th id="a2020" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="font-weight: bold" scope="col">2020</th>
@@ -2827,8 +2830,8 @@ Tabell&nbsp;4: Antal unika individer totalt som går i musik- eller kulturskola,
 <td class="gt_row gt_center" headers="2023" style="background-color: #F0CBDA; color: #000000">622</td>
 <td class="gt_row gt_center" headers="2024" style="background-color: #808080; color: #FFFFFF">NA</td>
 </tr>
-</tbody><tfoot class="gt_sourcenotes">
-<tr class="odd">
+</tbody><tfoot>
+<tr class="gt_sourcenotes odd">
 <td colspan="7" class="gt_sourcenote">Källa: Kulturrådet</td>
 </tr>
 </tfoot>
@@ -2856,23 +2859,23 @@ Tabell&nbsp;5: Andelen flickor i kulturskolan (6-19 år), anges i procent(%).
 </figcaption>
 <div aria-describedby="tbl-konsfordelning_skola-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div id="ousmclfcms" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#ousmclfcms table {
+<div id="nsoiuxmcgt" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#nsoiuxmcgt table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#ousmclfcms thead, #ousmclfcms tbody, #ousmclfcms tfoot, #ousmclfcms tr, #ousmclfcms td, #ousmclfcms th {
+#nsoiuxmcgt thead, #nsoiuxmcgt tbody, #nsoiuxmcgt tfoot, #nsoiuxmcgt tr, #nsoiuxmcgt td, #nsoiuxmcgt th {
   border-style: none;
 }
 
-#ousmclfcms p {
+#nsoiuxmcgt p {
   margin: 0;
   padding: 0;
 }
 
-#ousmclfcms .gt_table {
+#nsoiuxmcgt .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -2898,12 +2901,12 @@ Tabell&nbsp;5: Andelen flickor i kulturskolan (6-19 år), anges i procent(%).
   border-left-color: #D3D3D3;
 }
 
-#ousmclfcms .gt_caption {
+#nsoiuxmcgt .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#ousmclfcms .gt_title {
+#nsoiuxmcgt .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -2915,7 +2918,7 @@ Tabell&nbsp;5: Andelen flickor i kulturskolan (6-19 år), anges i procent(%).
   border-bottom-width: 0;
 }
 
-#ousmclfcms .gt_subtitle {
+#nsoiuxmcgt .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -2927,7 +2930,7 @@ Tabell&nbsp;5: Andelen flickor i kulturskolan (6-19 år), anges i procent(%).
   border-top-width: 0;
 }
 
-#ousmclfcms .gt_heading {
+#nsoiuxmcgt .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -2939,13 +2942,13 @@ Tabell&nbsp;5: Andelen flickor i kulturskolan (6-19 år), anges i procent(%).
   border-right-color: #D3D3D3;
 }
 
-#ousmclfcms .gt_bottom_border {
+#nsoiuxmcgt .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ousmclfcms .gt_col_headings {
+#nsoiuxmcgt .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2960,7 +2963,7 @@ Tabell&nbsp;5: Andelen flickor i kulturskolan (6-19 år), anges i procent(%).
   border-right-color: #D3D3D3;
 }
 
-#ousmclfcms .gt_col_heading {
+#nsoiuxmcgt .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2980,7 +2983,7 @@ Tabell&nbsp;5: Andelen flickor i kulturskolan (6-19 år), anges i procent(%).
   overflow-x: hidden;
 }
 
-#ousmclfcms .gt_column_spanner_outer {
+#nsoiuxmcgt .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2992,15 +2995,15 @@ Tabell&nbsp;5: Andelen flickor i kulturskolan (6-19 år), anges i procent(%).
   padding-right: 4px;
 }
 
-#ousmclfcms .gt_column_spanner_outer:first-child {
+#nsoiuxmcgt .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ousmclfcms .gt_column_spanner_outer:last-child {
+#nsoiuxmcgt .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ousmclfcms .gt_column_spanner {
+#nsoiuxmcgt .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -3012,11 +3015,11 @@ Tabell&nbsp;5: Andelen flickor i kulturskolan (6-19 år), anges i procent(%).
   width: 100%;
 }
 
-#ousmclfcms .gt_spanner_row {
+#nsoiuxmcgt .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#ousmclfcms .gt_group_heading {
+#nsoiuxmcgt .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3042,7 +3045,7 @@ Tabell&nbsp;5: Andelen flickor i kulturskolan (6-19 år), anges i procent(%).
   text-align: left;
 }
 
-#ousmclfcms .gt_empty_group_heading {
+#nsoiuxmcgt .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -3057,15 +3060,15 @@ Tabell&nbsp;5: Andelen flickor i kulturskolan (6-19 år), anges i procent(%).
   vertical-align: middle;
 }
 
-#ousmclfcms .gt_from_md > :first-child {
+#nsoiuxmcgt .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ousmclfcms .gt_from_md > :last-child {
+#nsoiuxmcgt .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ousmclfcms .gt_row {
+#nsoiuxmcgt .gt_row {
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 5px;
@@ -3084,7 +3087,7 @@ Tabell&nbsp;5: Andelen flickor i kulturskolan (6-19 år), anges i procent(%).
   overflow-x: hidden;
 }
 
-#ousmclfcms .gt_stub {
+#nsoiuxmcgt .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3097,7 +3100,7 @@ Tabell&nbsp;5: Andelen flickor i kulturskolan (6-19 år), anges i procent(%).
   padding-right: 5px;
 }
 
-#ousmclfcms .gt_stub_row_group {
+#nsoiuxmcgt .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3111,15 +3114,15 @@ Tabell&nbsp;5: Andelen flickor i kulturskolan (6-19 år), anges i procent(%).
   vertical-align: top;
 }
 
-#ousmclfcms .gt_row_group_first td {
+#nsoiuxmcgt .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#ousmclfcms .gt_row_group_first th {
+#nsoiuxmcgt .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#ousmclfcms .gt_summary_row {
+#nsoiuxmcgt .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -3129,16 +3132,16 @@ Tabell&nbsp;5: Andelen flickor i kulturskolan (6-19 år), anges i procent(%).
   padding-right: 5px;
 }
 
-#ousmclfcms .gt_first_summary_row {
+#nsoiuxmcgt .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#ousmclfcms .gt_first_summary_row.thick {
+#nsoiuxmcgt .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#ousmclfcms .gt_last_summary_row {
+#nsoiuxmcgt .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3148,7 +3151,7 @@ Tabell&nbsp;5: Andelen flickor i kulturskolan (6-19 år), anges i procent(%).
   border-bottom-color: #D3D3D3;
 }
 
-#ousmclfcms .gt_grand_summary_row {
+#nsoiuxmcgt .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -3158,7 +3161,7 @@ Tabell&nbsp;5: Andelen flickor i kulturskolan (6-19 år), anges i procent(%).
   padding-right: 5px;
 }
 
-#ousmclfcms .gt_first_grand_summary_row {
+#nsoiuxmcgt .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3168,7 +3171,7 @@ Tabell&nbsp;5: Andelen flickor i kulturskolan (6-19 år), anges i procent(%).
   border-top-color: #D3D3D3;
 }
 
-#ousmclfcms .gt_last_grand_summary_row_top {
+#nsoiuxmcgt .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3178,11 +3181,11 @@ Tabell&nbsp;5: Andelen flickor i kulturskolan (6-19 år), anges i procent(%).
   border-bottom-color: #D3D3D3;
 }
 
-#ousmclfcms .gt_striped {
+#nsoiuxmcgt .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ousmclfcms .gt_table_body {
+#nsoiuxmcgt .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -3191,7 +3194,7 @@ Tabell&nbsp;5: Andelen flickor i kulturskolan (6-19 år), anges i procent(%).
   border-bottom-color: #D3D3D3;
 }
 
-#ousmclfcms .gt_footnotes {
+#nsoiuxmcgt .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -3205,7 +3208,7 @@ Tabell&nbsp;5: Andelen flickor i kulturskolan (6-19 år), anges i procent(%).
   border-right-color: #D3D3D3;
 }
 
-#ousmclfcms .gt_footnote {
+#nsoiuxmcgt .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -3214,7 +3217,7 @@ Tabell&nbsp;5: Andelen flickor i kulturskolan (6-19 år), anges i procent(%).
   padding-right: 5px;
 }
 
-#ousmclfcms .gt_sourcenotes {
+#nsoiuxmcgt .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -3228,7 +3231,7 @@ Tabell&nbsp;5: Andelen flickor i kulturskolan (6-19 år), anges i procent(%).
   border-right-color: #D3D3D3;
 }
 
-#ousmclfcms .gt_sourcenote {
+#nsoiuxmcgt .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -3236,79 +3239,79 @@ Tabell&nbsp;5: Andelen flickor i kulturskolan (6-19 år), anges i procent(%).
   padding-right: 5px;
 }
 
-#ousmclfcms .gt_left {
+#nsoiuxmcgt .gt_left {
   text-align: left;
 }
 
-#ousmclfcms .gt_center {
+#nsoiuxmcgt .gt_center {
   text-align: center;
 }
 
-#ousmclfcms .gt_right {
+#nsoiuxmcgt .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ousmclfcms .gt_font_normal {
+#nsoiuxmcgt .gt_font_normal {
   font-weight: normal;
 }
 
-#ousmclfcms .gt_font_bold {
+#nsoiuxmcgt .gt_font_bold {
   font-weight: bold;
 }
 
-#ousmclfcms .gt_font_italic {
+#nsoiuxmcgt .gt_font_italic {
   font-style: italic;
 }
 
-#ousmclfcms .gt_super {
+#nsoiuxmcgt .gt_super {
   font-size: 65%;
 }
 
-#ousmclfcms .gt_footnote_marks {
+#nsoiuxmcgt .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#ousmclfcms .gt_asterisk {
+#nsoiuxmcgt .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#ousmclfcms .gt_indent_1 {
+#nsoiuxmcgt .gt_indent_1 {
   text-indent: 5px;
 }
 
-#ousmclfcms .gt_indent_2 {
+#nsoiuxmcgt .gt_indent_2 {
   text-indent: 10px;
 }
 
-#ousmclfcms .gt_indent_3 {
+#nsoiuxmcgt .gt_indent_3 {
   text-indent: 15px;
 }
 
-#ousmclfcms .gt_indent_4 {
+#nsoiuxmcgt .gt_indent_4 {
   text-indent: 20px;
 }
 
-#ousmclfcms .gt_indent_5 {
+#nsoiuxmcgt .gt_indent_5 {
   text-indent: 25px;
 }
 
-#ousmclfcms .katex-display {
+#nsoiuxmcgt .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#ousmclfcms div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#nsoiuxmcgt div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
 
-<table class="gt_table do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<table class="gt_table do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
 <thead>
-<tr class="header gt_col_headings">
+<tr class="gt_col_headings header">
 <th id="Kommun" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="font-weight: bold" scope="col">Kommun</th>
 <th id="a2016" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="font-weight: bold" scope="col">2016</th>
 <th id="a2017" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="font-weight: bold" scope="col">2017</th>
@@ -3418,8 +3421,8 @@ Tabell&nbsp;5: Andelen flickor i kulturskolan (6-19 år), anges i procent(%).
 <td class="gt_row gt_center" headers="2023" style="background-color: #808080; color: #FFFFFF">NA</td>
 <td class="gt_row gt_center" headers="2024" style="background-color: #808080; color: #FFFFFF">NA</td>
 </tr>
-</tbody><tfoot class="gt_sourcenotes">
-<tr class="odd">
+</tbody><tfoot>
+<tr class="gt_sourcenotes odd">
 <td colspan="10" class="gt_sourcenote">Källa: Kulturrådet</td>
 </tr>
 </tfoot>
@@ -3432,7 +3435,7 @@ Tabell&nbsp;5: Andelen flickor i kulturskolan (6-19 år), anges i procent(%).
 </figure>
 </div>
 </div>
-<p>Flickor utgör en tydlig majoritet av eleverna i kulturskolan. Endast vid ett tillfälle under hela perioden var pojkarna fler - i Håbo år 2017. I övrigt ligger andelen flickor över 50 procent i samtliga kommuner och år med tillgängliga data. För de kommuner som har aktuella data (de senaste två åren) ligger andelen flickor generellt högt. Uppsala kommun är den enda kommunen under 60 procent med 59,72 procent flickor senaste året.</p>
+<p>Flickor utgör en tydlig majoritet av eleverna i kulturskolan. Endast vid ett tillfälle under hela perioden var pojkarna fler, i Håbo år 2017. I övrigt ligger andelen flickor över 50 procent i samtliga kommuner och år med tillgängliga data. För de kommuner som har aktuella data (de senaste två åren) ligger andelen flickor generellt högt. Uppsala kommun är den enda kommunen under 60 procent med 59,72 procent flickor senaste året.</p>
 <p>Den högsta andelen under perioden finns i Älvkarleby år 2017 med 91,68 procent flickor, vilket också är det senaste året med data för kommunen. Året innan, 2016, var andelen 68,54 procent, alltså en väldigt stor förändring. värt att notera är att i mindre kommuner med färre elever kan små förändringar i absoluta tal ge stora utslag i procentandelar.</p>
 <p>Data saknas för vissa kommuner under flera år i perioden, vilket försvårar jämförelser över tid.</p>
 </section>
@@ -3474,7 +3477,7 @@ Figur&nbsp;5
 <p>I de flesta kommuner driver kommunen själv kulturskolan. I ett mindre antal kommuner finns även andra huvudmän eller enbart annan huvudman än kommunen.</p>
 <p>Data är hämtat från <span class="citation" data-cites="kolada">Rådet för främjande av kommunala analyser (<a href="#ref-kolada" role="doc-biblioref">2025</a>)</span> som hänvisar till <span class="citation" data-cites="kulturradet">Kulturrådet (<a href="#ref-kulturradet" role="doc-biblioref">2025</a>)</span>.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-6-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-1" role="tab" aria-controls="tabset-6-1" aria-selected="true">Enköping</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-2" role="tab" aria-controls="tabset-6-2" aria-selected="false">Heby</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-3" role="tab" aria-controls="tabset-6-3" aria-selected="false">Håbo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-4" role="tab" aria-controls="tabset-6-4" aria-selected="false">Knivsta</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-5" role="tab" aria-controls="tabset-6-5" aria-selected="false">Tierp</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-6" role="tab" aria-controls="tabset-6-6" aria-selected="false">Uppsala</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-7" role="tab" aria-controls="tabset-6-7" aria-selected="false">Älvkarleby</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-8-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-8" role="tab" aria-controls="tabset-6-8" aria-selected="false">Östhammar</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-6-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-1" role="tab" aria-controls="tabset-6-1" aria-selected="true" href="">Enköping</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-2" role="tab" aria-controls="tabset-6-2" aria-selected="false" href="">Heby</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-3" role="tab" aria-controls="tabset-6-3" aria-selected="false" href="">Håbo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-4" role="tab" aria-controls="tabset-6-4" aria-selected="false" href="">Knivsta</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-5" role="tab" aria-controls="tabset-6-5" aria-selected="false" href="">Tierp</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-6" role="tab" aria-controls="tabset-6-6" aria-selected="false" href="">Uppsala</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-7" role="tab" aria-controls="tabset-6-7" aria-selected="false" href="">Älvkarleby</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-8-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-8" role="tab" aria-controls="tabset-6-8" aria-selected="false" href="">Östhammar</a></li></ul>
 <div class="tab-content">
 <div id="tabset-6-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-6-1-tab">
 <img src="Figurer/amneskurs_Enköping.svg" alt="Figuren om kommunen erbjuder ämneskursen i kulturskolan i  Enköping , över tid" style="width:100%; max-width:800px; height:100%;">
@@ -3658,239 +3661,243 @@ Statistiska centralbyrån (SCB). 2025a. <span>”Medborgarundersökningen – re
 
 
 <script id="quarto-html-after-body" type="application/javascript">
-window.document.addEventListener("DOMContentLoaded", function (event) {
-  const toggleBodyColorMode = (bsSheetEl) => {
-    const mode = bsSheetEl.getAttribute("data-mode");
-    const bodyEl = window.document.querySelector("body");
-    if (mode === "dark") {
-      bodyEl.classList.add("quarto-dark");
-      bodyEl.classList.remove("quarto-light");
-    } else {
-      bodyEl.classList.add("quarto-light");
-      bodyEl.classList.remove("quarto-dark");
-    }
-  }
-  const toggleBodyColorPrimary = () => {
-    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-    if (bsSheetEl) {
-      toggleBodyColorMode(bsSheetEl);
-    }
-  }
-  toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
       }
+      return false;
     }
-    return false;
-  }
-  const onCopySuccess = function(e) {
-    // button target
-    const button = e.trigger;
-    // don't keep focus
-    button.blur();
-    // flash "checked"
-    button.classList.add('code-copy-button-checked');
-    var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Kopierat!");
-    let tooltip;
-    if (window.bootstrap) {
-      button.setAttribute("data-bs-toggle", "tooltip");
-      button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Kopierat!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
-          customClass: "code-copy-button-tooltip",
-          offset: [0, -8]});
-      tooltip.show();    
-    }
-    setTimeout(function() {
-      if (tooltip) {
-        tooltip.hide();
-        button.removeAttribute("data-bs-title");
-        button.removeAttribute("data-bs-toggle");
-        button.removeAttribute("data-bs-placement");
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Kopierat!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Kopierat!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
       }
-      button.setAttribute("title", currentTitle);
-      button.classList.remove('code-copy-button-checked');
-    }, 1000);
-    // clear code selection
-    e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
       for (const childEl of codeEl.children) {
         if (isCodeAnnotation(childEl)) {
           childEl.remove();
         }
       }
       return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
-  });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
     });
-    clipboardModal.on('success', onCopySuccess);
-  }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
     }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
-    }
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-    const config = {
-      allowHTML: true,
-      maxWidth: 500,
-      delay: 100,
-      arrow: false,
-      appendTo: function(el) {
-          return el.parentElement;
-      },
-      interactive: true,
-      interactiveBorder: 10,
-      theme: 'quarto',
-      placement: 'bottom-start',
-    };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
-    window.tippy(el, config); 
-  }
-  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-  for (var i=0; i<noterefs.length; i++) {
-    const ref = noterefs[i];
-    tippyHover(ref, function() {
-      // use id or data attribute instead here
-      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-      try { href = new URL(href).hash; } catch {}
-      const id = href.replace(/^#\/?/, "");
-      const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
-        }
-      }
-    }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
           }
         }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
         }
-        return container.innerHTML
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
       } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
         if (window.Quarto?.typesetMath) {
           window.Quarto.typesetMath(note);
         }
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      // TODO in 1.5, we should make sure this works without a callout special case
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
       }
     }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
           }
         } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
           .then(res => res.text())
           .then(html => {
             const parser = new DOMParser();
             const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
+            const note = htmlDoc.querySelector('main.content');
             if (note !== null) {
-              const html = processXRef(id, note);
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
               instance.setContent(html);
             } 
           }).finally(() => {
@@ -3898,185 +3905,161 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             instance.show();
           });
         }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
-    });
-  }
-      let selectedAnnoteEl;
-      const selectorForAnnotation = ( cell, annotation) => {
-        let cellAttr = 'data-code-cell="' + cell + '"';
-        let lineAttr = 'data-code-annotation="' +  annotation + '"';
-        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-        return selector;
-      }
-      const selectCodeLines = (annoteEl) => {
-        const doc = window.document;
-        const targetCell = annoteEl.getAttribute("data-target-cell");
-        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-        const lineIds = lines.map((line) => {
-          return targetCell + "-" + line;
-        })
-        let top = null;
-        let height = null;
-        let parent = null;
-        if (lineIds.length > 0) {
-            //compute the position of the single el (top and bottom and make a div)
-            const el = window.document.getElementById(lineIds[0]);
-            top = el.offsetTop;
-            height = el.offsetHeight;
-            parent = el.parentElement.parentElement;
-          if (lineIds.length > 1) {
-            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-            height = bottom - top;
-          }
-          if (top !== null && height !== null && parent !== null) {
-            // cook up a div (if necessary) and position it 
-            let div = window.document.getElementById("code-annotation-line-highlight");
-            if (div === null) {
-              div = window.document.createElement("div");
-              div.setAttribute("id", "code-annotation-line-highlight");
-              div.style.position = 'absolute';
-              parent.appendChild(div);
-            }
-            div.style.top = top - 2 + "px";
-            div.style.height = height + 4 + "px";
-            div.style.left = 0;
-            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-            if (gutterDiv === null) {
-              gutterDiv = window.document.createElement("div");
-              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-              gutterDiv.style.position = 'absolute';
-              const codeCell = window.document.getElementById(targetCell);
-              const gutter = codeCell.querySelector('.code-annotation-gutter');
-              gutter.appendChild(gutterDiv);
-            }
-            gutterDiv.style.top = top - 2 + "px";
-            gutterDiv.style.height = height + 4 + "px";
-          }
-          selectedAnnoteEl = annoteEl;
-        }
-      };
-      const unselectCodeLines = () => {
-        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-        elementsIds.forEach((elId) => {
-          const div = window.document.getElementById(elId);
-          if (div) {
-            div.remove();
-          }
-        });
-        selectedAnnoteEl = undefined;
-      };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
-      // Attach click handler to the DT
-      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-      for (const annoteDlNode of annoteDls) {
-        annoteDlNode.addEventListener('click', (event) => {
-          const clickedEl = event.target;
-          if (clickedEl !== selectedAnnoteEl) {
-            unselectCodeLines();
-            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-            if (activeEl) {
-              activeEl.classList.remove('code-annotation-active');
-            }
-            selectCodeLines(clickedEl);
-            clickedEl.classList.add('code-annotation-active');
-          } else {
-            // Unselect the line
-            unselectCodeLines();
-            clickedEl.classList.remove('code-annotation-active');
-          }
-        });
-      }
-  const findCites = (el) => {
-    const parentEl = el.parentElement;
-    if (parentEl) {
-      const cites = parentEl.dataset.cites;
-      if (cites) {
-        return {
-          el,
-          cites: cites.split(' ')
-        };
-      } else {
-        return findCites(el.parentElement)
-      }
-    } else {
-      return undefined;
-    }
-  };
-  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-  for (var i=0; i<bibliorefs.length; i++) {
-    const ref = bibliorefs[i];
-    const citeInfo = findCites(ref);
-    if (citeInfo) {
-      tippyHover(citeInfo.el, function() {
-        var popup = window.document.createElement('div');
-        citeInfo.cites.forEach(function(cite) {
-          var citeDiv = window.document.createElement('div');
-          citeDiv.classList.add('hanging-indent');
-          citeDiv.classList.add('csl-entry');
-          var biblioDiv = window.document.getElementById('ref-' + cite);
-          if (biblioDiv) {
-            citeDiv.innerHTML = biblioDiv.innerHTML;
-          }
-          popup.appendChild(citeDiv);
-        });
-        return popup.innerHTML;
+      }, function(instance) {
       });
     }
-  }
-});
-</script>
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
 </div> <!-- /content -->
 
 
